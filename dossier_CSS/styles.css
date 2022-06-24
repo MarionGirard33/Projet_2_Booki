@@ -35,7 +35,7 @@ h2
 
 h3
 {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -176,13 +176,13 @@ form i
 
 }
 
-/*header version mobile*/
+/*main zone Recherche version mobile*/
 
 @media screen and (max-width: 768px) 
 {
     main
     {
-        margin: 18px;
+        padding: 15px;
     }
 
     #rechercher
@@ -252,4 +252,245 @@ form i
 .bouton:hover
 {
     background-color: #F2F2F2;
+}
+
+/*info*/
+
+#info
+{
+    display: flex;
+    margin-top: 10px;
+}
+
+#info i
+{
+    width: 30px;
+    height: 30px;
+    padding-top: 6px;
+    font-size: 90%;
+    text-align: center;
+    color: #0065FC;
+    border: solid 2px #F2F2F2;
+    border-radius: 25px 25px 25px 25px;
+    margin: 8px 10px 0 0;
+}
+
+/*main card*/
+
+.nom
+{
+    margin-top: 10px;
+}
+
+.card_corps p
+{
+   font-size: 15px;
+}
+
+.card:hover 
+{
+    box-shadow: 2px 2px 40px rgb(155, 153, 153);
+}
+
+.card a:hover
+{
+    color: #0065FC;
+}
+
+.bleu
+{
+    color: #0065FC;
+}
+
+.gris
+{
+    color: rgb(201, 198, 198);
+}
+
+@media screen and (max-width: 992px) 
+{
+
+}
+
+/*hébergements*/
+
+#hébergements
+{
+    background-color: #F2F2F2;
+    display: block;
+}
+
+#hébergements .card 
+{
+   width: 230px;
+   height: 215px;
+   background-color: white;
+   box-shadow: 2px 2px 20px rgb(201, 198, 198);
+   margin: 2%;
+   border-radius: 18px;
+}
+
+#hébergements .card:hover 
+{
+    box-shadow: 2px 2px 40px rgb(155, 153, 153);
+}
+
+
+#hébergements .card_image img
+{
+    object-fit:cover;
+    width: 96%;
+    height: 120px;
+    margin: 2% 2% 0 2%;
+    border-radius: 15px 15px 0 0;
+}
+
+#hébergements .card_corps
+{
+   margin-left: 7%;
+   line-height: 50%;
+   width: auto;
+   height: auto;
+}
+
+/*main zone card hébergements version mobile*/
+
+@media screen and (max-width: 768px) 
+{
+    #hébergements
+    {
+        background-color: white;
+    }
+    
+    #hébergements .card
+    {
+        width: auto;
+        height: auto;
+    }
+}
+
+/*populaires*/
+
+#populaires
+{
+    background-color: #F2F2F2;
+}
+
+#populaires .card 
+{ 
+   width: 350px;
+   height: 150px;
+   background-color: white;
+   box-shadow: 2px 2px 20px rgb(201, 198, 198);
+   margin: 2%;
+   border-radius: 18px;
+}
+
+#populaires .card:hover 
+{
+    box-shadow: 2px 2px 40px rgb(155, 153, 153);
+}
+
+.populaires_liste
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#populaires .card_image img
+{
+    object-fit: cover;
+    align-items: center;
+    width: 130px;
+    height: 140px;
+    margin: 4% 0 4% 4%;
+    border-radius: 15px 0 0 15px;
+}
+
+#populaires .card_corps
+{
+    height: 140px;
+    margin: 0 10% 0 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*main zone card populaires version mobile*/
+
+@media screen and (max-width: 768px) 
+{
+    #populaires
+    {
+        background-size: 100%;
+        display: flex;
+    }
+
+    #populaires .card
+    {
+        width: auto;
+        height: auto;
+    }
+}
+
+/*position section centrale*/
+
+#section_centrale
+{
+    display: flex;
+    margin-top: 20px;
+}
+
+#hébergements
+{
+    width:70%;
+    margin-right: 20px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#hébergements .hôtels
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#hébergements h1, #hébergements h2
+{
+    margin-left: 30px;
+}
+
+#populaires
+{
+    width: 35%;
+    margin-left: 20px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#populaires_étoile
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 0 15px 0 5px;
+}
+
+#populaires_étoile i
+{
+    font-size: 120%;
+    padding: 15px 2px 0 0;
+}
+
+#populaires .hôtels
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#populaires .card
+{
+    margin-bottom: 20px;
 }
