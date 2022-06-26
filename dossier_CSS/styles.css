@@ -12,7 +12,6 @@ body
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     max-width: 1440px;
-    margin: 50px 50px 50px 50px;
 }
 
 body a 
@@ -21,33 +20,32 @@ body a
     color: black;
 }
 
-h1
+body h1
 {
     font-size: 20px;
     font-weight: bold;
 }
 
-h2
+body h2
 {
     font-size: 17px;
     font-weight: bold;
 }
 
-h3
+body h3
 {
     font-size: 17px;
     font-weight: bold;
 }
-
-/*header*/
 
 /*----------------------------------------------------------------*/
+/*header*/
 
 header
 {
     display: flex;
     justify-content: space-between; 
-    margin-bottom: 30px;   
+    margin: 47px 40px 30px 40px;   
 }
 
 .logo
@@ -57,7 +55,7 @@ header
 
 header a
 {
-    padding: 63px 20px 15px 20px;
+    padding: 60px 20px 15px 20px;
 }
 
 header ul
@@ -83,7 +81,7 @@ header a:hover
 
 @media screen and (max-width: 768px) 
 {
-    body
+    header
     {
         width: auto;
         margin: 0;
@@ -114,7 +112,7 @@ header a:hover
 
     header a 
     {
-        padding-bottom: 17px; 
+        padding-bottom: 16px; 
     }
 
     header a:hover
@@ -126,6 +124,12 @@ header a:hover
 }
 
 /*----------------------------------------------------------------*/
+/*main*/
+
+main
+{
+    margin: 50px 50px 50px 50px;
+}
 
 /*main zone Recherche */
 
@@ -179,6 +183,11 @@ form i
 
 @media screen and (max-width: 768px) 
 {
+    main
+    {
+        width: auto;
+        margin: 30px 0 40px 0;
+    }
     #section_haute
     {
         margin: 0 15px 0 15px;
@@ -512,16 +521,26 @@ form i
     {
         background-color: white;
         width: 100%;
-        height: auto;
         margin: 0;
         border-radius: 0;
+        padding: 15px;
     }
     
-    
-    #hébergements .card, #hébergements .card_image, #hébergements .card_corps
+    #hébergements .card
     {
         width: 100%;
+        height: 199px;
         font-size: 90%;
+    }
+
+    #hébergements .card_image
+    {
+        width: 100%;
+    }
+
+    #hébergements .card_corps
+    {
+        font-size: 70%;
     }
 
     #hébergements h1, #hébergements h2
@@ -531,6 +550,7 @@ form i
 
 }
 
+/*----------------------------------------------------------------*/
 /*activités*/
 
 #activités
@@ -538,23 +558,55 @@ form i
     display: block;
 }
 
-#activités .card 
+#activités .card_l 
 {
-   width: 230px;
-   height: 215px;
+   width: 302px;
+   height: 444px;
    background-color: white;
    box-shadow: 2px 2px 20px rgb(201, 198, 198);
-   margin: 2%;
    border-radius: 18px;
 }
 
-#activités .card_image img
+#activités .card_m 
 {
-    object-fit:cover;
-    width: 96%;
-    height: 120px;
-    margin: 2% 2% 0 2%;
+   width: 302px;
+   height: 235px;
+   background-color: white;
+   box-shadow: 2px 2px 20px rgb(201, 198, 198);
+   border-radius: 18px;
+}
+
+#activités .card_s
+{
+   width: 302px;
+   height: 165px;
+   background-color: white;
+   box-shadow: 2px 2px 20px rgb(201, 198, 198);
+   border-radius: 18px;
+}
+
+#activités .card_l_image img
+{
+    width: 100%;
+    height: 388px;
     border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+#activités .card_m_image img
+{
+    width: 100%;
+    height: 179px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+#activités .card_s_image img
+{
+    width: 100%;
+    height: 109px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
 }
 
 #activités .card_corps
@@ -565,3 +617,112 @@ form i
    height: auto;
 }
 
+#activités .card_l:hover, #activités .card_m:hover, #activités .card_s:hover 
+{
+    box-shadow: 2px 2px 40px rgb(155, 153, 153);
+}
+
+/*position section activités*/
+
+#activités
+{
+    margin-top: 50px;
+}
+
+#activités .card_activités
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+}
+
+#activités .card_verticale
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*position activités version tablette*/
+
+@media screen and (max-width: 992px) 
+{
+
+}
+
+/*position activités version mobile*/
+
+@media screen and (max-width: 768px) 
+{
+    #activités
+    {
+        margin: 0 6% 0 6%;
+    }
+
+    #activités .card_activités
+    {
+       flex-direction: column;
+       width: 100%;
+    } 
+
+    #activités .card_l, #activités .card_m, #activités .card_s
+    {
+        width: 100%;
+        height: 190px;
+        font-size: 90%;  
+        margin-top: 5%; 
+    }
+
+    #activités .card_l_image img, #activités .card_m_image img, #activités .card_s_image img
+    {
+        width: 100%;
+        height: 134px;
+    }
+
+    #hébergements .card_corps
+    {
+        font-size: 70%;
+        align-items: center;
+    }
+
+}
+
+/*----------------------------------------------------------------*/
+/*footer*/
+
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    padding: 35px 0 35px 70px;
+}
+
+.liens_pied_page
+{
+    margin-right: 20%;
+}
+
+.liens_pied_page ul
+{
+    list-style-type: none;
+    padding: 0;
+    line-height: 30px;
+}
+
+/*footer version tablette*/
+
+@media screen and (max-width: 992px) 
+{
+
+}
+
+/*footer version mobile*/
+
+@media screen and (max-width: 768px) 
+{
+    footer
+    {
+        flex-direction: column;
+        padding-left: 35px;
+    }
+}
