@@ -1,0 +1,149 @@
+/*header version tablette : pas de changement*/
+
+/*----------------------------------------------------------------*/
+
+/*main zone Filtres et info version tablette*/
+
+@media screen and (max-width: 992px) 
+{
+    #filtres
+    {
+        flex-direction: column;
+    }
+
+    #filtres div
+    {
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }  
+}
+
+/*position section centrale version tablette*/
+
+@media screen and (max-width: 992px) 
+{
+    #section_centrale
+    {
+       flex-direction: column-reverse;
+    } 
+}
+
+/*main zone populaires version tablette*/
+
+@media screen and (max-width: 992px) 
+{
+   
+    #populaires
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0 0 40px 0;
+    }
+
+    #populaires .hôtels
+    {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #populaires .card
+    {
+        width: 40%;
+        height: 190px;
+        margin-bottom: 3%;
+    }
+
+    #populaires_liste
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    #populaires .card_image, #populaires .card_corps
+    {
+        width: 100%;
+        height: auto;
+        font-size: 80%;
+    }
+}
+
+/*main zone hébergements version tablette*/
+
+@media screen and (max-width: 992px) 
+{
+    #hébergements
+    {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    #hébergements .hôtels
+    {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #hébergements .card
+    {
+        width: 40%;
+        height: 220px;
+        font-size: 90%;
+    }
+
+    #hébergements .card_image
+    {
+        width: 100%;
+    }
+
+    #hébergements h1, #hébergements h2
+    {
+        margin-left: 20px;
+    }
+
+}
+
+/*----------------------------------------------------------------*/
+
+/*position activités version tablette*/
+
+@media screen and (max-width: 992px) 
+{
+    #activités
+    {
+        margin: 6% 6% 0 6%;
+    }
+
+    #activités .card_activités
+    {
+       flex-direction: column;
+       width: 100%;
+    } 
+
+        #activités .card_verticale
+    {
+        margin-bottom: 30px;
+    }
+
+    #activités .card_l, #activités .card_m, #activités .card_s
+    {
+        width: 100%;
+        height: 190px;
+        font-size: 90%;  
+        margin-top: 5%; 
+    }
+
+    #activités .card_l_image img, #activités .card_m_image img, #activités .card_s_image img
+    {
+        width: 100%;
+        height: 134px;
+    }
+}
+
+/*footer version tablette : pas de changement*/
+
