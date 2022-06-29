@@ -1,3 +1,4 @@
+/*version desktop*/
 /*base*/
 
 body
@@ -22,11 +23,17 @@ body h1
 
 body h2
 {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 body h3
+{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+body h4
 {
     font-size: 17px;
     font-weight: bold;
@@ -101,6 +108,7 @@ form input
     padding:15px 40px 15px 15px;
     font-weight: bold;
     border: solid 1px #F2F2F2;
+    outline: none
 }
 
 form i
@@ -121,7 +129,7 @@ form i
     display:flex;
 }
 
-#filtres h2
+#filtres h3
 {
     margin-right: 15px;
 }
@@ -335,7 +343,7 @@ form i
     justify-content: center;
 }
 
-#hébergements h1, #hébergements h2
+#hébergements h2, #hébergements h3
 {
     margin-left: 30px;
 }

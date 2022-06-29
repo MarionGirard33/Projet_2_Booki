@@ -1,4 +1,6 @@
 /*header version tablette : pas de changement*/
+/*position section haute version tablette : pas de changement*/
+/*main zone Recherche version tablette : pas de changement*/
 
 /*----------------------------------------------------------------*/
 
@@ -15,24 +17,19 @@
     {
         margin-bottom: 10px;
         flex-wrap: wrap;
-    }  
-}
+    } 
+
+/*----------------------------------------------------------------*/
 
 /*position section centrale version tablette*/
 
-@media screen and (max-width: 992px) 
-{
     #section_centrale
     {
        flex-direction: column-reverse;
     } 
-}
 
 /*main zone populaires version tablette*/
 
-@media screen and (max-width: 992px) 
-{
-   
     #populaires
     {
         width: 100%;
@@ -66,14 +63,11 @@
     {
         width: 100%;
         height: auto;
-        font-size: 80%;
+        font-size: 70%;
     }
-}
 
 /*main zone hébergements version tablette*/
 
-@media screen and (max-width: 992px) 
-{
     #hébergements
     {
         width: 100%;
@@ -101,19 +95,15 @@
         width: 100%;
     }
 
-    #hébergements h1, #hébergements h2
+    #hébergements h2, #hébergements h3
     {
         margin-left: 20px;
     }
-
-}
 
 /*----------------------------------------------------------------*/
 
 /*position activités version tablette*/
 
-@media screen and (max-width: 992px) 
-{
     #activités
     {
         margin: 6% 6% 0 6%;
