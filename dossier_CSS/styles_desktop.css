@@ -5,8 +5,6 @@ body
 {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    max-width: 1440px;
-    
 }
 
 body a 
@@ -152,22 +150,29 @@ form i
     color: #0065FC;
     border-radius: 25px;
     position: relative;
-    top:1px; left: 22px;
+    left: -2px;
 }
 
-.bouton
+.actif
 {
-   padding: 0 20px 0 40px;
-   background-color: white;
-   font-weight: bold;
-   border: solid 2px #F2F2F2;
-   overflow: hidden;
-   border-radius: 0 25px 25px 0;
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 200px;
+    font-weight: bold;
+    padding: 0 20px 0 0;
+    margin-left: 25px;
 }
 
-.bouton:hover
+#filtres .actif a
 {
-    background-color: #F2F2F2;
+    font-weight: bold;
+    margin-left: 10px;   
+}
+
+#filtres .actif:hover
+{
+   background-color: #F2F2F2;
 }
 
 /*info*/
@@ -205,6 +210,11 @@ form i
    font-size: 15px;
 }
 
+.card_corps i
+{
+    font-size: 12px;
+}
+
 .card:hover 
 {
     box-shadow: 2px 2px 40px rgb(155, 153, 153);
@@ -227,13 +237,13 @@ form i
 
 /*hébergements*/
 
-#hébergements
+#hebergements
 {
     background-color: #F2F2F2;
     display: block;
 }
 
-#hébergements .card 
+#hebergements .card 
 {
    width: 230px;
    height: 215px;
@@ -243,12 +253,12 @@ form i
    border-radius: 18px;
 }
 
-#hébergements .card:hover 
+#hebergements .card:hover 
 {
     box-shadow: 2px 2px 40px rgb(155, 153, 153);
 }
 
-#hébergements .card_image img
+#hebergements .card_image img
 {
     object-fit:cover;
     width: 96%;
@@ -257,7 +267,7 @@ form i
     border-radius: 15px 15px 0 0;
 }
 
-#hébergements .card_corps
+#hebergements .card_corps
 {
    margin-left: 7%;
    line-height: 50%;
@@ -273,7 +283,7 @@ form i
     height: auto;
 }
 
-#populaires .hôtels
+#populaires .hotels
 {
     height: 90%;
 }
@@ -308,11 +318,10 @@ form i
 
 #populaires .card_corps
 {
-    height: auto;
-    margin: 0 10% 0 7%;
+    height: 100%;
+    margin: 0 5% 0 5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 #populaires .card:hover 
@@ -328,7 +337,7 @@ form i
     margin-top: 20px;
 }
 
-#hébergements
+#hebergements
 {
     width:70%;
     margin-right: 20px;
@@ -336,14 +345,14 @@ form i
     padding: 20px;
 }
 
-#hébergements .hôtels
+#hebergements .hotels
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#hébergements h2, #hébergements h3
+#hebergements h2, #hebergements h3
 {
     margin-left: 30px;
 }
@@ -356,7 +365,7 @@ form i
     padding: 20px;
 }
 
-#populaires_étoile
+#populaires_etoile
 {
     display: flex;
     justify-content: space-between;
@@ -364,13 +373,13 @@ form i
     margin: 0 15px 0 5px;
 }
 
-#populaires_étoile i
+#populaires_etoile i
 {
     font-size: 120%;
     padding: 15px 2px 0 0;
 }
 
-#populaires .hôtels
+#populaires .hotels
 {
     display: flex;
     flex-direction: column;
@@ -385,14 +394,9 @@ form i
 /*----------------------------------------------------------------*/
 /*activités*/
 
-#activités
+#section_activites .card_l 
 {
-    display: block;
-}
-
-#activités .card_l 
-{
-   width: 302px;
+   width: 100%;
    height: 444px;
    background-color: white;
    box-shadow: 2px 2px 20px rgb(201, 198, 198);
@@ -400,9 +404,9 @@ form i
    margin-bottom: 10px;
 }
 
-#activités .card_m 
+#section_activites .card_m 
 {
-   width: 302px;
+   width: 100%;
    height: 235px;
    background-color: white;
    box-shadow: 2px 2px 20px rgb(201, 198, 198);
@@ -410,9 +414,9 @@ form i
    margin-bottom: 10px;
 }
 
-#activités .card_s
+#section_activites .card_s
 {
-   width: 302px;
+   width: 100%;
    height: 165px;
    background-color: white;
    box-shadow: 2px 2px 20px rgb(201, 198, 198);
@@ -420,7 +424,7 @@ form i
    margin-bottom: 10px;
 }
 
-#activités .card_l_image img
+#section_activites .card_l_image img
 {
     width: 100%;
     height: 388px;
@@ -428,7 +432,7 @@ form i
     object-fit: cover;
 }
 
-#activités .card_m_image img
+#section_activites .card_m_image img
 {
     width: 100%;
     height: 179px;
@@ -436,7 +440,7 @@ form i
     object-fit: cover;
 }
 
-#activités .card_s_image img
+#section_activites .card_s_image img
 {
     width: 100%;
     height: 109px;
@@ -444,40 +448,41 @@ form i
     object-fit: cover;
 }
 
-#activités .card_corps
+#section_activites .card_corps h4
 {
    margin-left: 7%;
-   line-height: 50%;
-   width: auto;
-   height: auto;
+   margin-top: 5%;
 }
 
-#activités .card_l:hover, #activités .card_m:hover, #activités .card_s:hover 
+#section_activites .card_l:hover, #section_activites .card_m:hover, #section_activites .card_s:hover 
 {
     box-shadow: 2px 2px 40px rgb(155, 153, 153);
 }
 
 /*position section activités*/
 
-#activités
-{
+#section_activites
+{   
+    display: block;
     margin-top: 50px;
 }
 
-#activités .card_activités
+#section_activites .card_activites
 {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    width: 100%;
     margin: 20px 0 20px 0;
 }
 
-#activités .card_verticale
+#section_activites .card_verticale
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
+    margin: 0 30px 0 30px;
 }
+
 
 /*----------------------------------------------------------------*/
 /*footer*/
@@ -485,6 +490,7 @@ form i
 footer
 {
     display: flex;
+    width: 100%;
     background-color: #F2F2F2;
     padding: 35px 0 35px 70px;
 }

@@ -6,8 +6,6 @@
 
 /*main zone Filtres et info version tablette*/
 
-@media screen and (max-width: 992px) 
-{
     #filtres
     {
         flex-direction: column;
@@ -37,7 +35,7 @@
         margin: 0 0 40px 0;
     }
 
-    #populaires .hôtels
+    #populaires .hotels
     {
         display:flex;
         flex-direction: row;
@@ -59,22 +57,20 @@
         height: 100%;
     }
 
-    #populaires .card_image, #populaires .card_corps
+    #populaires .card_corps h4
     {
-        width: 100%;
-        height: auto;
-        font-size: 70%;
+        margin-top: 4px;
     }
 
 /*main zone hébergements version tablette*/
 
-    #hébergements
+    #hebergements
     {
         width: 100%;
-        padding: 15px;
+
     }
     
-    #hébergements .hôtels
+    #hebergements .hotels
     {
         display:flex;
         flex-direction: row;
@@ -83,19 +79,20 @@
         width: 100%;
     }
 
-    #hébergements .card
+    #hebergements .card
     {
         width: 40%;
         height: 220px;
-        font-size: 90%;
+        font-size: 80%;
     }
 
-    #hébergements .card_image
+    #hebergements .card_image img
     {
-        width: 100%;
+        width: 98%;
+        margin: 1% 1% 0 1%;
     }
 
-    #hébergements h2, #hébergements h3
+    #hebergements h2, #hebergements h3
     {
         margin-left: 20px;
     }
@@ -104,23 +101,29 @@
 
 /*position activités version tablette*/
 
-    #activités
+    #section_activites
     {
         margin: 6% 6% 0 6%;
     }
 
-    #activités .card_activités
+    #section_activites .card_activites
     {
        flex-direction: column;
        width: 100%;
     } 
 
-        #activités .card_verticale
+    #section_activites .card_verticale
     {
-        margin-bottom: 30px;
+        margin: 0;
     }
 
-    #activités .card_l, #activités .card_m, #activités .card_s
+    #section_activites .card_corps h4
+    {
+        margin-left: 7%;
+        margin-top: 2%;
+    }
+
+    #section_activites .card_l, #section_activites .card_m, #section_activites .card_s
     {
         width: 100%;
         height: 190px;
@@ -128,12 +131,11 @@
         margin-top: 5%; 
     }
 
-    #activités .card_l_image img, #activités .card_m_image img, #activités .card_s_image img
+    #section_activites .card_l_image img, #section_activites .card_m_image img, #section_activites .card_s_image img
     {
         width: 100%;
         height: 134px;
     }
-}
 
 /*footer version tablette : pas de changement*/
 
