@@ -52,7 +52,7 @@
         width: auto;
         margin: 0;
     }
-    #section_haute
+    #section-haute
     {
         margin: 20px 10px 0 15px;
     }
@@ -111,7 +111,12 @@
 
 /*----------------------------------------------------------------*/
 
-/*position section centrale version mobile : pas de changement*/
+/*position section centrale version mobile*/
+
+#section-centrale
+{
+    margin: 20px 0 0 0;
+}
 
 /*main zone populaires version mobile*/
   
@@ -141,7 +146,7 @@
         height: 199px;
     }
 
-    #hebergements .card_corps
+    #hebergements .card-corps
     {
         font-size: 70%;
         line-height: 2px;
@@ -151,7 +156,7 @@
 
 /*position activités version mobile*/
 
-    #section_activites
+    #section-activites
     {
         margin: 0 6% 0 6%;
     }
