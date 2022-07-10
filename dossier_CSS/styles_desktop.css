@@ -270,9 +270,13 @@ form i
 #hebergements .card-corps
 {
    margin-left: 7%;
-   line-height: 50%;
    width: auto;
    height: auto;
+}
+
+.hotels .card-corps h4, .hotels .card-corps p
+{
+    margin: 0 0 4px 0;
 }
 
 /*populaires*/
@@ -312,6 +316,7 @@ form i
     align-items: center;
     width: 130px;
     height: 100%;
+    max-height: 180px;
     border: 5px solid transparent;
     border-radius: 20px 0 0 20px;
 }
@@ -319,9 +324,15 @@ form i
 #populaires .card-corps
 {
     height: 100%;
+    max-height: 180px;
     margin: 0 5% 0 5%;
     display: flex;
     flex-direction: column;
+}
+
+#populaires .card-corps h4, #populaires .card-corps p
+{
+    margin: 4px 0 4px 0;
 }
 
 #populaires .card:hover 
@@ -348,7 +359,6 @@ form i
 #hebergements .hotels
 {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -492,7 +502,7 @@ footer
     display: flex;
     width: 100%;
     background-color: #F2F2F2;
-    padding: 35px 0 35px 70px;
+    padding: 35px 0 35px 55px;
 }
 
 .liens-pied-page

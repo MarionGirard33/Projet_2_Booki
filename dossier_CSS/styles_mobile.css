@@ -131,6 +131,11 @@
         height: 180px;
     }
 
+    #populaires .card-corps h4, #populaires .card-corps p
+    {
+        margin: 10px 0 10px 0;
+    }
+
 /*main zone hébergements version mobile*/
 
     #hebergements
@@ -152,6 +157,11 @@
         line-height: 2px;
     }
 
+    .hotels .card-corps h4, .hotels .card-corps p
+    {
+        margin: 10px 0 20px 0;
+    }
+
 /*----------------------------------------------------------------*/
 
 /*position activités version mobile*/
@@ -168,5 +178,5 @@
     footer
     {
         flex-direction: column;
-        padding-left: 35px;
+        padding-left: 30px;
     }
